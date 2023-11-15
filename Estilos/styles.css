@@ -68,10 +68,9 @@ nav ul li{
     transition: 0.5s;
 }
 
-
 .pets-image img {
-    width: 15vw;
-    height: 31vh;
+    width: 16%;
+    height: auto;
     display: flex;
     position: absolute;
     top: 80px;
@@ -80,20 +79,19 @@ nav ul li{
     border: 5px dotted #35155D;
 }
 
-.logo-cervet img {
-    width: 15vw;
-    height: 31vh;
+.logo-cervet {
+    margin: auto;
+    margin-top: 40px;
+    width: 16%;
+    height: auto;
     display: flex;
-    position: absolute;
-    top: 160px;
-    left: 520px;
     border-radius: 100%;
     border: 5px dotted #35155D;
 }
 
 .rescue-image img {
-    width: 15vw;
-    height: 31vh;
+    width: 16%;
+    height: auto;
     display: flex;
     position: absolute;
     top: 80px;
@@ -262,5 +260,20 @@ iframe{
     animation: fadeIn 2s ease;
 }
 
+@media screen and (max-width:1200px){   
+    header{
+        padding: 40px;
+    }
 
+}
 
+@media screen and (max-width:720px){   
+    h1{
+        font-size: 30px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
