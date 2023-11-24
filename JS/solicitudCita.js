@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     res.sendFile(filePath);
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 
 app.listen(PORT, () => {
     console.log(`Servidor ejecutado en http://localhost:${PORT}`)
