@@ -12,11 +12,11 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', (req, res) => {
-    const filePath = path.join(__dirname, '..', 'Proyecto Infocenter', 'index.html');
+    const filePath = path.join(__dirname,'..','formulario.html');
     res.sendFile(filePath);
 });
 
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`Servidor ejecutado en http://localhost:${PORT}`)
@@ -24,18 +24,13 @@ app.listen(PORT, () => {
 
 app.post('/solicitud/cita', (req, res) => {
     const {
-        nombre_mascota,
-        raza_mascota,
-        edad_mascota,
-        fecha_cita,
-        hora_cita,
-        nombre_dueño
+        nombre_mascota, edad_mascota, raza_mascota, fecha_cita, hora_cita,nombre_dueno
     } = req.body;
 
     //creamos la consulta para la inserción de la base de datos
 
-    const sql = 'INSERT INTO citas (nombre_mascota, edad_mascota, raza_mascota, fecha_cita, hora_cita, nombre_dueño) VALUES (?,?,?,?,?,?)';
-    connection.query(sql, [nombre_mascota, raza_mascota, edad_mascota, fecha_cita, hora_cita, nombre_dueño], (err, result) => {
+    const sql = 'INSERT INTO citas (nombre_mascota, edad_mascota, raza_mascota, fecha_cita, hora_cita, nombre_dueno) VALUES (?,?,?,?,?,?)';
+    connection.query(sql, [nombre_mascota, edad_mascota, raza_mascota,  fecha_cita, hora_cita, nombre_dueno], (err, result) => {
         if (err) {
             throw err;
         }

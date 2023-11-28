@@ -46,18 +46,18 @@
         <div class="form-1">
             <form action="/solicitud/cita" id="form-ppal" method="POST">
                 <label for="nombre_mascota">Nombre Mascota</label>
-                <input type="text" id="nombre_mascota">
+                <input type="text" id="nombre_mascota" name="nombre_mascota">
                 <label for="edad_mascota">Edad</label>
-                <input type="number" id="edad_mascota">
+                <input type="number" id="edad_mascota" name="edad_mascota">
                 <label for="raza_mascota">Raza</label>
-                <input type="text" id="raza_mascota">
+                <input type="text" id="raza_mascota" name="raza_mascota">
                 <label for="fecha_cita">Fecha</label>
-                <input type="date" id="fecha_cita">
+                <input type="date" id="fecha_cita" name="fecha_cita">
                 <label for="hora_cita">Hora</label>
-                <input type="time" id="hora_cita">
-                <label for="nombre_dueño">Papá o mamá</label>
-                <input type="text" id="nombre_dueño">
-                <input type="button" value="Enviar">
+                <input type="time" id="hora_cita" name="hora_cita">
+                <label for="nombre_dueno">Papá o mamá</label>
+                <input type="text" id="nombre_dueno" name="nombre_dueno">
+                <button>Enviar</button>
             </form>
         </div>
         <footer>
@@ -66,26 +66,6 @@
             </div>
         </footer>
     </main>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('form').addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const formData = new FormData(e.target);
-                const response = await fetch('/solicitud/cita', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const data = await response.json();
-
-                if (response.ok) {
-                    // Abre el modal cuando el registro es exitoso
-                    $('#myModal').modal('show');
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
