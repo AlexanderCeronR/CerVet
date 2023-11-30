@@ -1,0 +1,44 @@
+#github{
+    width: 100px;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+    transition: all 0.5s
+}
+
+#github:hover{
+    transform: scale(3);
+}
+
+#linkedin{
+    width: 60px;
+    position: fixed;
+    right: 30px;
+    top: 150px;
+}
+
+#whatsapp{
+    width: 45px;
+    position: fixed;
+    right: 38px;
+    top: 260px;
+}
+
+#stack{
+    width: 45px;
+    position: fixed;
+    right: 38px;
+    top: 350px;
+}
+
+.Nova1 {
+
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top: 100px;
+
+}
+

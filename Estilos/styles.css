@@ -260,6 +260,7 @@ iframe{
     margin-top: 20px;
     background-image: linear-gradient(90deg, #35155D, #8CABFF);
     color: aliceblue;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     align-items: center;

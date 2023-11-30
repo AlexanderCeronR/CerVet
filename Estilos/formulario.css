@@ -123,7 +123,7 @@ nav ul li {
 #titulo-form{
     margin: auto;
     position: relative;
-    top: 120px;
+    top: 160px;
     color: white;
     background: #ccc;
     background: linear-gradient(90deg, #35155D, #8CABFF);
@@ -132,10 +132,11 @@ nav ul li {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     text-align: center;
+    animation: fadeIn 2s ease;
 }
 
 .form-1 {
-    margin: 170px auto;
+    margin: 200px auto;
     padding: 10px;
     width: 250px;
     height: auto;
@@ -145,6 +146,7 @@ nav ul li {
     color: aliceblue;
     border: 1px solid #35155D;
     border-radius: 10px;
+    animation: fadeIn 2s ease;
 }
 
 .form-1 form {
@@ -165,13 +167,13 @@ nav ul li {
     margin-top: 20px;
     background-image: linear-gradient(90deg, #35155D, #8CABFF);
     color: aliceblue;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     animation: fadeIn 2s ease;
 }
-
 
 @media screen and (max-width:720px) {
 
