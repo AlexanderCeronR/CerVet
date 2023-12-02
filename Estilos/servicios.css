@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*Section encabezado principal*/
+
+.encabezado {
+    width: 100%;
+    height: 200px;
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    background: #ccc;
+    background: linear-gradient(90deg, #35155D, #8CABFF);
+    font-family: system-ui;
+    font-size: 3rem;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+h1:hover {
+    background: #ccc;
+    background: linear-gradient(90deg, #8CABFF, #35155D);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: 0.5s;
+}
+
+
+.navbar-menu-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+.navbar-menu-right li {
+    margin-left: 12px;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+.navbar-menu-right a {
+    display: flex;
+    font-size: 15px;
+    text-decoration: none;
+    color: #35155D;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navbar-menu-right a:hover {
+    background-color: #35155D;
+    color: #8CABFF;
+    transition: 0.5s;
+}
+
+.pets-image img {
+    width: 16%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    border-radius: 100%;
+    border: 5px dotted #35155D;
+}
+
+.logo-cervet {
+    margin: auto;
+    width: 16%;
+    height: auto;
+    display: flex;
+    border-radius: 100%;
+    border: 5px dotted #35155D;
+}
+
+.rescue-image img {
+    width: 16%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    border-radius: 100%;
+    border: 5px dotted #35155D;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+}
+
+/*Section cuerpo principal*/
+
+h2 {
+    position: absolute;
+    top: 340px;
+    right: 500px;
+    color: white;
+    background: #ccc;
+    background: linear-gradient(90deg, #35155D, #8CABFF);
+    font-family: system-ui;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    width: 600px;
+    height: 430px;
+    animation: fadeIn 2s ease;
+}
+
+.container img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.container img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*Pie de página*/
+
+#footer-ppal {
+    width: 100%;
+    height: 20vh;
+    margin-top: 20px;
+    background-image: linear-gradient(90deg, #35155D, #8CABFF);
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease;
+}
+
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+
+    40% {
+        margin-left: 0%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    75% {
+        margin-left: -100%;
+    }
+
+    80% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo1 {
+        padding-top: 30px;
+    }
+
+    #titulo2 {
+        padding-bottom: 30px;
+    }
+
+    #titulo3 {
+        position: absolute;
+        left: 200px;
+    }
+
+    .iframe-1 {
+        min-height: 100vh;
+        margin: auto;
+        text-align: center;
+    }
+
+    iframe {
+        width: auto;
+        margin: auto;
+    }
+
+    .texto-cuerpo-ppal {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        position: absolute;
+        top: 120%;
+    }
+
+    #footer-ppal {
+        position: absolute;
+        top: 1200px;
+    }
+
+}
+
+@media screen and (min-width: 720px) {}

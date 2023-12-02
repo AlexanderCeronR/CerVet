@@ -1,3 +1,15 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+}
+
 #github{
     width: 100px;
     position: fixed;
@@ -7,7 +19,7 @@
 }
 
 #github:hover{
-    transform: scale(3);
+    transform: scale(2);
 }
 
 #linkedin{
@@ -15,6 +27,11 @@
     position: fixed;
     right: 30px;
     top: 150px;
+    transition: all 0.5s;
+}
+
+#linkedin:hover{
+    transform: scale(2);
 }
 
 #whatsapp{
@@ -22,6 +39,11 @@
     position: fixed;
     right: 38px;
     top: 260px;
+    transition: all 0.5s;
+}
+
+#whatsapp:hover{
+    transform: scale(2);
 }
 
 #stack{
@@ -29,16 +51,21 @@
     position: fixed;
     right: 38px;
     top: 350px;
-}
-
-.Nova1 {
-
-    width: 100px;
     transition: all 0.5s;
-    cursor: pointer;
-    position: fixed;
-    right: 40px;
-    top: 100px;
-
 }
 
+#stack:hover{
+    transform: scale(2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+}
