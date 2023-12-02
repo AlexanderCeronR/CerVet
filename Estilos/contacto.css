@@ -30,7 +30,7 @@ h1 {
     text-align: center;
 }
 
-h1:hover {
+h1:hover{
     background: #ccc;
     background: linear-gradient(90deg, #8CABFF, #35155D);
     background-clip: text;
@@ -56,7 +56,7 @@ h1:hover {
     margin-left: 12px;
 }
 
-nav ul li {
+nav ul li{
     text-align: center;
 }
 
@@ -106,24 +106,31 @@ nav ul li {
     border: 5px dotted #35155D;
 }
 
-@keyframes fadeIn {
-    0% {
+@keyframes fadeIn{
+    0%{
         opacity: 0;
         filter: blur(20px);
     }
-
-    10% {
+    10%{
         opacity: 1;
         filter: brightness(2) blur(10px);
     }
 }
 
-/*Section cuerpo principal*/
+/*Sección de contacto*/
+
+#contacto-ppal{
+    margin-left: 15%;
+    font-family: system-ui;
+    width: 80%;
+    margin-top: 200px;
+    animation: fadeIn 2s ease;
+}
 
 h2 {
     position: absolute;
     top: 340px;
-    right: 500px;
+    right: 450px;
     color: white;
     background: #ccc;
     background: linear-gradient(90deg, #35155D, #8CABFF);
@@ -135,57 +142,77 @@ h2 {
     animation: fadeIn 2s ease;
 }
 
-.container {
+#izquierda{
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 390px;
+    height: auto;
+    overflow: hidden;
+    border: 0px solid #35155D;
+    float: left;
+}
+
+.texto-contacto{
+    text-align: justify;
+    color: black;
+
+}
+
+#derecha {
+    margin-right: 150px;
+    width: 390px;
+    border: 0px solid #35155D;
+    height: auto;
+    overflow: hidden;
+    float: right;
+}
+
+input[type="text"], input[type="email"]{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+textarea{
+    width: 95%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.nombre-mensaje{
+    width: 95%;
+}
+
+.email-asunto{
+    width: 45%;
+}
+
+input[type="submit"]{
     margin: 0 auto;
-    margin-top: 200px;
-    display: flex;
-    width: 600px;
-    height: 430px;
-    animation: fadeIn 2s ease;
+    padding: 5px;
+    background: linear-gradient(90deg, #8CABFF, #35155D);
+    color: white;
+    border: 1px solid #8CABFF;
+    border-radius: 5px;
 }
 
-.container img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
+input[type="submit"]:hover{
+    cursor: pointer;
 }
 
-.container img:hover {
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
+#mapa{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 20px;
 }
-
-/*Botones de servicios*/
-
-.container-2 {
-    display: flex;
-    justify-content: center;
-}
-
-.container-2 a {
-    display: flex;
-    font-size: 15px;
-    text-decoration: none;
-    color: #35155D;
-    padding: 10px;
-    margin: 30px;
-    border-radius: 8px;
-}
-
-.container-2 a:hover {
-    background-color: #35155D;
-    color: #8CABFF;
-    transition: 0.5s;
-}
-
 
 /*Pie de página*/
 
-#footer-ppal {
+#footer-ppal{
     width: 100%;
     height: 20vh;
     margin-top: 20px;
@@ -200,68 +227,42 @@ h2 {
 }
 
 
-@keyframes slide {
-    0% {
-        margin-left: 0%;
-    }
-
-    40% {
-        margin-left: 0%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    75% {
-        margin-left: -100%;
-    }
-
-    80% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-}
-
-@media screen and (max-width:720px) {
-
-    h1 {
+@media screen and (max-width:720px){
+    
+    h1{
         font-size: 30px;
     }
 
-    ul {
+    ul{
         display: flex;
         flex-direction: column;
     }
 
-    #titulo1 {
+    #titulo1{
         padding-top: 30px;
     }
 
-    #titulo2 {
+    #titulo2{
         padding-bottom: 30px;
     }
 
-    #titulo3 {
+    #titulo3{
         position: absolute;
         left: 200px;
     }
 
-    .iframe-1 {
+    .iframe-1{
         min-height: 100vh;
         margin: auto;
         text-align: center;
     }
 
-    iframe {
+    iframe{
         width: auto;
         margin: auto;
     }
 
-    .texto-cuerpo-ppal {
+    .texto-cuerpo-ppal{
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -273,11 +274,13 @@ h2 {
         top: 120%;
     }
 
-    #footer-ppal {
+    #footer-ppal{
         position: absolute;
         top: 1200px;
     }
 
 }
 
-@media screen and (min-width: 720px) {}
+@media screen and (min-width: 720px){
+    
+}

@@ -9,6 +9,8 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    background: url(Imagenes/fondoPantalla.jpg);
+    background: no-repeat;
 }
 
 /*Section encabezado principal*/
@@ -159,6 +161,20 @@ nav ul li {
     margin: 5px;
 }
 
+button{
+    margin: 10px auto;
+    padding: 5px;
+    background: linear-gradient(90deg, #8CABFF, #35155D);
+    color: white;
+    border: 1px solid #8CABFF;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, #35155D, #8CABFF);
+}
+
 /*Pie de página*/
 
 #footer-ppal {
@@ -173,6 +189,78 @@ nav ul li {
     align-items: center;
     justify-content: center;
     animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+}
+
+#github{
+    width: 100px;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+    transition: all 0.5s
+}
+
+#github:hover{
+    transform: scale(2);
+}
+
+#linkedin{
+    width: 60px;
+    position: fixed;
+    right: 30px;
+    top: 150px;
+    transition: all 0.5s;
+}
+
+#linkedin:hover{
+    transform: scale(2);
+}
+
+#whatsapp{
+    width: 45px;
+    position: fixed;
+    right: 38px;
+    top: 260px;
+    transition: all 0.5s;
+}
+
+#whatsapp:hover{
+    transform: scale(2);
+}
+
+#stack{
+    width: 45px;
+    position: fixed;
+    right: 38px;
+    top: 350px;
+    transition: all 0.5s;
+}
+
+#stack:hover{
+    transform: scale(2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
 }
 
 @media screen and (max-width:720px) {

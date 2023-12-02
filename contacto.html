@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CerVet</title>
-    <link rel="stylesheet" href="Estilos/servicios.css">
+    <link rel="stylesheet" href="Estilos/contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="Imagenes/Favicon.png">
@@ -42,19 +42,30 @@
             </header>
         </section>
 
-        <section class="container">
-            <h2>Nuestros Servicios</h2>
-            <img src="Imagenes/ServicioVeterinaria.jpg" alt="Veterinaria">
-            <img src="Imagenes/tiendaCervet.jpg" alt="tiendaCervet">
-            <img src="Imagenes/rescateCervet.jpg" alt="rescateCervet">
-        </section>
-
-        <section class="container-2">
-            <a href="formulario.html">Citas</a>
-            <a href="">Tienda</a>
-            <a href="contacto.html">Denuncias</a>
-        </section>
-
+        <section id="contacto-ppal">
+            <h2>Toma contacto con nosotros</h2>
+       <div id="izquierda">
+            <p class="texto-contacto">Para denunciar tráfico de animales a través de nuestro portal web, accede a nuestro formulario y completa los espacios indicando detalles relevantes como fecha, lugar y descripción del incidente. Adjunta cualquier evidencia disponible, como fotos o videos. Garantizamos la confidencialidad de la información proporcionada. Tu colaboración es crucial para combatir este delito. ¡Gracias por ser parte de la protección animal! <br><br>
+            Puedes contactarnos a través de:
+            <br><br>
+            Teléfono: <strong>555-123-4567</strong>
+            <br><br>
+            Email: <a href="mailto: denuncias@proteccionanimal.com">denuncias@proteccionanimal.com</a>
+            </p>
+       </div>
+       <div id="derecha">
+            <form action="#" method="POST">
+                <input type="text" name="nombre" class="nombre-mensaje" placeholder="Déjanos tu nombre">
+                <input type="email" name="correo" placeholder="Correo electrónico" class="email-asunto">
+                <input type="text" name="asunto" class="email-asunto" placeholder="Ingresa asunto"><br>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Describe tu denuncia"></textarea><br>
+                <input type="submit" name="enviar" value="Enviar Denuncia"> 
+            </form>
+       </div>
+       <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4582.178275425862!2d-75.58881713639181!3d6.258092737977123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44290e4f870f69%3A0xf57f97b59ef52c39!2sEstadio%20de%20F%C3%BAtbol%20Atanasio%20Girardot!5e0!3m2!1ses!2sco!4v1701551603196!5m2!1ses!2sco" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+    </section>
         <section class="botones-flotantes">
             <a href="https://github.com/AlexanderCeronR" target="_blank"><img src="Imagenes/GitHub-Logo.svg"
                     alt="Github-Logo" id="github"></a>
